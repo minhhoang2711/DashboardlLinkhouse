@@ -1,0 +1,53 @@
+/*==Reset CSS==*/
+* {
+	margin: 0px auto;
+	padding: 0px auto;
+}
+
+body{
+	width: 100%;
+	background:#242C3E;
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 15px !important;
+	color:white;
+	padding-right: 0px !important;
+}
+
+/* Style the MENU */
+.nav {
+	background-color: #1B2232;
+    transition: 0.3s;
+	font-size: 16.51px;
+	border: none;
+    outline: none;
+	cursor: pointer;
+	height:75px;
+  	width:101%;
+}
+
+.nav a{
+	color:#7D8DA1 !important;
+	border-radius: 0 0 0 0 !important;
+	height: 75px !important;
+	line-height: 55px !important;
+	text-align: center !important;
+	margin:0px !important;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+	border-top: 4px solid #2294E6 !important;
+	background-color: #242C3E !important;	
+    color:#FAFAFA !important;
+	font-weight: bold !important;
+	border:0px;
+}
+.nav-tabs>li:hover>a{
+	background-color: #242C3E !important;	
+	border:0px;
+}
+
+
+.content{
+	margin-top: 15px;
+	margin-left: 15px;
+}
