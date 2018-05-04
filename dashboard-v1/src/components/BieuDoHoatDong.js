@@ -25,18 +25,7 @@ class BieuDoHoatDong extends Component {
                           2000,
                       ],
                       borderColor:[
-                          'black',
-                          'black',
-                          'black',
-                          'black',
-                          'black',
-                          'black',
-                          'black',
-                          'black',
-                          'black',
-                          'black',
-                          'black',
-                          'black',
+                          'blue'
                       ]
                   },
                   {
@@ -56,18 +45,7 @@ class BieuDoHoatDong extends Component {
                         1000,
                       ],
                       borderColor:[
-                        'red',
-                        'red',
-                        'red',
-                        'red',
-                        'red',
-                        'red',
-                        'red',
-                        'red',
-                        'red',
-                        'red',
-                        'red',
-                        'red',
+                        'red'
                     ]
                   }
               ]
@@ -91,6 +69,13 @@ class BieuDoHoatDong extends Component {
                     width={8}
                     height={3}
 					options={{
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                        },
 						title:{
 							display:displayTitle,
 							text:'BIỂU ĐỒ HOẠT ĐỘNG',

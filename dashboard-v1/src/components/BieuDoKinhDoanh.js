@@ -92,6 +92,13 @@ class BieuDoKinhDoanh extends Component {
                     width={8}
                     height={3}
 					options={{
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                        },
 						title:{
 							display:displayTitle,
 							text:'BIỂU ĐỒ KINH DOANH',
