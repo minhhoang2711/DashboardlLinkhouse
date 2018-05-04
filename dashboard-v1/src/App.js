@@ -1,18 +1,129 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+      <div>
+
+        <header>
+          <div className="row">
+            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+              <ul className="nav nav-tabs">
+                <li className="active"><a data-toggle="tab" href="#linkhouse">LinkHouse</a></li>
+                <li><a data-toggle="tab" href="#quan2">Quận 2</a></li>
+                <li><a data-toggle="tab" href="#quan7">Quận 7</a></li>
+                <li><a data-toggle="tab" href="#quan9">Quận 9</a></li>
+                <li><a data-toggle="tab" href="#binhtan">Bình Tân</a></li>
+                <li><a data-toggle="tab" href="#binhthanh">Bình Thạnh</a></li>
+                <li><a data-toggle="tab" href="#bienhoa">Biên Hòa</a></li>
+                <li><a data-toggle="tab" href="#nhatrang">Nha Trang</a></li>
+                <li><a data-toggle="tab" href="#cantho">Cần Thơ</a></li>
+                <li><a data-toggle="tab" href="#haugiang">Hậu Giang</a></li>
+                <li><a data-toggle="tab" href="#quangngai">Quãng Ngãi</a></li>
+                <li><a data-toggle="tab" href="#quynhon">Quy Nhơn</a></li>
+                <li><a data-toggle="tab" href="#phanthiet">Phan Thiết</a></li>
+                <li><a data-toggle="tab" href="#ptkd">PTKD</a></li>
+              </ul>
+
+            </div>
+          </div>
         </header>
-        <p className="App-intro">
-          To get adasdasddasdasdasd, edit <code>src/App.js</code> and save to reload.
-        </p>
+
+
+        <div className="container">
+          <div className="scroller scroller-left"><i className="glyphicon glyphicon-chevron-left"></i></div>
+          <div className="scroller scroller-right"><i className="glyphicon glyphicon-chevron-right"></i></div>
+          <div className="wrapper">
+            <ul className="nav nav-tabs list" id="myTab">
+              <li className="active"><a href="#home">Home</a></li>
+              <li><a href="#profile">Profile</a></li>
+              <li><a href="#messages">Messages</a></li>
+              <li><a href="#settings">Settings</a></li>
+              <li><a href="#">Tab4</a></li>
+              <li><a href="#">Tab5</a></li>
+              <li><a href="#">Tab6</a></li>
+              <li><a href="#">Tab7</a></li>
+              <li><a href="#">Tab8</a></li>
+              <li><a href="#">Tab9</a></li>
+              <li><a href="#">Tab10</a></li>
+              <li><a href="#">Tab11</a></li>
+              <li><a href="#">Tab12</a></li>
+              <li><a href="#">Tab13</a></li>
+              <li><a href="#">Tab14</a></li>
+              <li><a href="#">Tab15</a></li>
+              <li><a href="#">Tab16</a></li>
+              <li><a href="#">Tab17</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+
+
+
+        <section className="content">
+          <div className="tab-content">
+            <div id="linkhouse" className="tab-pane fade in active">
+              <h3>HOME</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div id="quan2" className="tab-pane fade">
+              <h3>QuAN 2</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="quan7" className="tab-pane fade">
+              <h3>Menu 2</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="quan9" className="tab-pane fade">
+              <h3>Menu 1</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="binhtan" className="tab-pane fade">
+              <h3>Menu 3</h3>
+              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+            <div id="binhthanh" className="tab-pane fade">
+              <h3>Bình Thạnh</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="bienhoa" className="tab-pane fade">
+              <h3>Biên Hòa</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="nhatrang" className="tab-pane fade">
+              <h3>Menu 1</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="cantho" className="tab-pane fade">
+              <h3>Cần Thơ</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="haugiang" className="tab-pane fade">
+              <h3>Hậu Giang</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="quangngai" className="tab-pane fade">
+              <h3>Menu 2</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="quynhon" className="tab-pane fade">
+              <h3>Menu 3</h3>
+              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+            <div id="phanthiet" className="tab-pane fade">
+              <h3>Menu 1</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="ptkd" className="tab-pane fade">
+              <h3>Menu 2</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+          </div>
+        </section>
+
       </div>
     );
   }
