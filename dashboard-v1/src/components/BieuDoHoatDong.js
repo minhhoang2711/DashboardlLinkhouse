@@ -57,7 +57,8 @@ class BieuDoHoatDong extends Component {
 		displayTitle:true,
 		displayLegend:true,
 		legendPositon:'top'
-	}
+    }
+    
 
 	render(){
 		var { chartData } = this.state;
@@ -65,10 +66,12 @@ class BieuDoHoatDong extends Component {
 		return(
 			<div className="chart">
 				<Line
+                    
                     data={chartData}
                     width={8}
                     height={3}
 					options={{
+                       
                         scales: {
                             yAxes: [{
                                 ticks: {
