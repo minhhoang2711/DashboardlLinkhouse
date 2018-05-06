@@ -5,10 +5,12 @@
 }
 
 body{
+	width: 100%;
 	background:#242C3E;
 	font-family: 'Nunito', sans-serif !important;
 	font-size: 15px !important;
 	color:white;
+	padding-right: 0px !important;
 }
 
 /* Style the MENU */
@@ -20,7 +22,7 @@ body{
     outline: none;
 	cursor: pointer;
 	height:75px;
-  	width:100%;
+  	width:101%;
 }
 
 .nav a{
@@ -44,8 +46,8 @@ body{
 	border:0px;
 }
 
-.content {
-	margin-left: 15px;
-	margin-top: 15px;
-}
 
+.content{
+	margin-top: 15px;
+	margin-left: 15px;
+}

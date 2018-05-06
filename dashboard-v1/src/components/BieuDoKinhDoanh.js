@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Bar, Line} from 'react-chartjs-2';
+import {Bar} from 'react-chartjs-2';
 
 class BieuDoKinhDoanh extends Component {
 
@@ -24,6 +24,7 @@ class BieuDoKinhDoanh extends Component {
                           2000,
                           1000,
                           1500,
+                          
                       ],
                       backgroundColor:[
                           '#2294E6',
@@ -55,6 +56,7 @@ class BieuDoKinhDoanh extends Component {
                         2000,
                         900,
                         1000,
+                        
                       ],
                       backgroundColor:[
                           '#60C8E8',

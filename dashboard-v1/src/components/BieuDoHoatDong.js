@@ -1,77 +1,76 @@
 import React, { Component } from 'react';
-import {Bar, Line} from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 
 class BieuDoHoatDong extends Component {
-    constructor(props){
-		super(props);
-		this.state = {
-            chartData:{
-              labels:['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
-              datasets:[
-                  {
-                      label:'Coin doanh thu',
-                      data:[
-                          1000,
-                          2000,
-                          900,
-                          2000,
-                          900,
-                          1000,
-                          2000,
-                          1900,
-                          1500,
-                          2000,
-                          1500,
-                          2000,
-                      ],
-                      borderColor:[
-                          'blue'
-                      ]
-                  },
-                  {
-                      label:'Coin hoạt động',
-                      data:[
-                        1000,
-                        1000,
-                        1500,
-                        1500,
-                        2000,
-                        2000,
-                        1500,
-                        2000,
-                        1000,
-                        2000,
-                        1500,
-                        1000,
-                      ],
-                      borderColor:[
-                        'red'
-                    ]
-                  }
-              ]
-          }
+    constructor(props) {
+        super(props);
+        this.state = {
+            chartData: {
+                labels: ['Tháng 01 ' , 'Tháng 02 ', 'Tháng 03 ', 'Tháng 04 ', 'Tháng 05 ', 'Tháng 06 ', 'Tháng 07 ', 'Tháng 08 ', 'Tháng 09 ', 'Tháng 10 ', 'Tháng 11 ', 'Tháng 12 '],
+                datasets: [
+                    {
+                        label: 'Coin doanh thu',
+                        data: [
+                            400,
+                            600,
+                            200,
+                            600,
+                            400,
+                            200,
+                            2500,
+                            1000,
+                            2300,
+                            1000,
+                            1500,
+                            2000,
+                        ],
+                        borderColor: [
+                            '#76DDFB',
+
+                        ]
+                    },
+                    {
+                        label: 'Coin hoạt động',
+                        data: [
+                            100,
+                            0,
+                            1000,
+                            1800,
+                            900,
+                            1600,
+                            500,
+                            2500,
+                            1900,
+                            1800,
+                            1500,
+                            1000,
+                        ],
+                        borderColor: [
+                            '#51A5DE',
+
+                        ]
+                    }
+                ]
+            }
         }
-	}
-
-	static defaultProps = {
-		displayTitle:true,
-		displayLegend:true,
-		legendPositon:'top'
     }
-    
 
-	render(){
-		var { chartData } = this.state;
-		var { displayTitle, displayLegend, legendPositon } = this.props;
-		return(
-			<div className="chart">
-				<Line
-                    
+    static defaultProps = {
+        displayTitle: true,
+        displayLegend: true,
+        legendPositon: 'top'
+    }
+
+    render() {
+        var { chartData } = this.state;
+        var { displayTitle, displayLegend, legendPositon } = this.props;
+        return (
+            <div className="chart">
+                <Line
                     data={chartData}
-                    width={8}
+                    width={7}
                     height={3}
-					options={{
-                       
+                    options={{
                         scales: {
                             yAxes: [{
                                 ticks: {
@@ -79,24 +78,24 @@ class BieuDoHoatDong extends Component {
                                 }
                             }]
                         },
-						title:{
-							display:displayTitle,
-							text:'BIỂU ĐỒ HOẠT ĐỘNG',
-                            fontSize:15,
-                            fontColor:'white',
-                            fontFamily:'Nunito, sans-serif'
-						},
-						legend:{
-							display:displayLegend,
-                            position:legendPositon,
-                            fontSize:8,
-                            fontColor:'white',
-						},
-						maintainAspectRatio: true
-					}}
-				/>
-			</div>
-		)
+                        title: {
+                            display: displayTitle,
+                            text: 'BIỂU ĐỒ HOẠT ĐỘNG',
+                            fontSize: 15,
+                            fontColor: 'white',
+                            fontFamily: 'Nunito, sans-serif'
+                        },
+                        legend: {
+                            display: displayLegend,
+                            position: legendPositon,
+                            fontSize: 8,
+                            fontColor: 'white',
+                        },
+                        maintainAspectRatio: true
+                    }}
+                />
+            </div>
+        )
     }
 }
 
