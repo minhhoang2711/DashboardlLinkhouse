@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Bar, Line } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 
 class BieuDoHoatDong extends Component {
     constructor(props) {
@@ -68,8 +68,8 @@ class BieuDoHoatDong extends Component {
             <div className="chart">
                 <Line
                     data={chartData}
-                    width={7}
-                    height={3}
+                    width={9}
+                    height={4}
                     options={{
                         scales: {
                             yAxes: [{
@@ -83,13 +83,13 @@ class BieuDoHoatDong extends Component {
                             text: 'BIỂU ĐỒ HOẠT ĐỘNG',
                             fontSize: 15,
                             fontColor: 'white',
-                            fontFamily: 'Nunito, sans-serif'
+                            fontFamily: 'My-Custom-Font, sans-serif'
                         },
                         legend: {
                             display: displayLegend,
                             position: legendPositon,
-                            fontSize: 8,
-                            fontColor: 'white',
+                            fontSize: 200,
+                            fontColor: '#000',
                         },
                         maintainAspectRatio: true
                     }}

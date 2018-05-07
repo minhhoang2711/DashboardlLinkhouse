@@ -1,13 +1,18 @@
-/*==Reset CSS==*/
-* {
-	margin: 0px auto;
-	padding: 0px auto;
+@font-face {
+    font-family: 'My-Custom-Font';
+    src: url('./public/fonts/RV-Harmonia-Light.ttf') format('truetype')
 }
-
+.marginTop{
+	margin-top: 25px;
+	font-size: 14px;
+	margin-left:10px;
+	color:#7D8DA1;
+}
 body{
-	width: 100%;
+	position: absolute;
+	width: 100% !important;
 	background:#242C3E;
-	font-family: 'Nunito', sans-serif !important;
+	font-family: 'My-Custom-Font', sans-serif !important;
 	font-size: 15px !important;
 	color:white;
 	padding-right: 0px !important;
@@ -22,7 +27,7 @@ body{
     outline: none;
 	cursor: pointer;
 	height:75px;
-  	width:101%;
+  	width:100%;
 }
 
 .nav a{
@@ -45,9 +50,180 @@ body{
 	background-color: #242C3E !important;	
 	border:0px;
 }
+.item{
+	border-radius: 5px;	 
+	background: #1C2333;
+	margin-top: 25px;
+	text-align: left;
+	height: 350px;
+	width: auto;
+}
 
+.noChange{
+	float: left; 
+	margin-left: 10px;
+	height: 37px; 
+	line-height: 37px; 
+	width: 90px; 
+	text-align: left; 
+	font-size: 20px; 
+	border-radius: 3px;
+	background:#8FA5BF;
+	border-radius: 5px;
+}
 
-.content{
-	margin-top: 15px;
-	margin-left: 15px;
+.up{
+	float: left; 
+	margin-left: 10px;
+	height: 37px; 
+	line-height: 37px; 
+	width: 90px; 
+	text-align: left; 
+	font-size: 20px; 
+	border-radius: 3px;
+	background:#8CC44F;
+	border-radius: 5px;
+}
+
+.down{
+	float: left; 
+	margin-left: 10px;
+	height: 37px; 
+	line-height: 37px; 
+	width: 90px; 
+	text-align: left; 
+	font-size: 20px; 
+	border-radius: 3px;
+	background:#D4225D;
+	border-radius: 5px;
+}
+
+.target{
+	float: left; 
+	margin-left: 10px;
+	height: 37px; 
+	line-height: 37px; 
+	width: 90px; 
+	text-align: left; 
+	font-size: 20px; 
+	border-radius: 3px;
+	background:#53223F;
+	border:2px solid #D4225D;
+}
+
+.glyphicon-triangle-bottom{
+	color: #53223F;
+}
+
+.glyphicon-triangle-top{
+	color: #456127;
+}
+
+.glyphicon-minus{
+	color: #47525F;
+}
+
+.char{
+	color: #DCD2D8;
+	text-align: center;
+}
+
+.charred{
+	color: #53223F;
+	text-align: center;
+}
+
+.charxam{
+	color: #47525F;
+	text-align: center;
+}
+.chargreen{
+	color: #456127;
+	text-align: center;
+}
+.circleTim{
+	font-size: 14px;
+	color: #9195DA;
+}
+.circleXam{
+	font-size: 14px;
+	color:#536188;
+}
+.circleTimDam{
+	font-size: 14px;
+	color:#AC92EC;
+}
+.circleXanhLa{
+	font-size: 14px;
+	color:#A0D468;
+}
+.circleXanhDuong{
+
+	font-size: 14px;
+	color:#4FC1E9;
+}	
+
+.SquareXanhla{
+	font-size: 30px;
+	color: #8CC44F;
+}
+.SquareHong{
+	font-size: 30px;
+	color: #D4225D;
+}
+.SquareXam{
+	font-size: 30px;
+	color: #8FA5BF;
+}
+.member{
+	font-size: 14px;
+	margin-left:10px;
+	color:#7D8DA1;
+}
+
+.nav-tabs {
+	overflow-x: auto;
+   	overflow-y: hidden;
+   	display: -webkit-box;  
+   	display: -moz-box;   
+ }
+.nav-tabs>li {
+	 float:none;
+}
+/* Dành cho điện thoại */
+@media all and (min-width: 320px) {
+	.ChartReponsive{
+		min-width: 100%;
+	}
+}
+/* Dành cho máy tính bảng chiều dọc */
+@media all and (min-width: 600px) {
+	.ChartReponsive{
+		min-width: 100%;
+	}
+}
+/* Dành cho máy tính bảng chiều ngang */
+@media all and (min-width: 1024px) {
+	.ChartReponsive{
+		min-width: 50%;
+	}
+}
+/* Dành cho màn hình desktop */
+@media all and (min-width: 1280px) {
+	.ChartReponsive{
+		min-width: 50%;
+	}
+}
+.nav-tabs::-webkit-scrollbar {
+    height: 4px !important;
+}
+ 
+.nav-tabs::-webkit-scrollbar-track {
+    background-color: #242C3E; 
+    border-radius: 10px;
+}
+ 
+.nav-tabs::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #2294E6; 
 }
