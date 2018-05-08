@@ -1,6 +1,6 @@
-@font-face {
+﻿@font-face {
     font-family: 'My-Custom-Font';
-    src: url('./public/fonts/RV-Harmonia-Light.ttf') format('truetype')
+    src: url('/fonts/RV-Harmonia-Light.ttf') format('truetype')
 }
 .marginTop{
 	margin-top: 25px;
