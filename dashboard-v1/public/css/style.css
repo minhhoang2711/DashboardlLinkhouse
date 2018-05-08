@@ -1,11 +1,6 @@
-/*==Reset CSS==*/
-* {
-	margin: 0px auto;
-	padding: 0px auto;
-}
+
 
 body{
-	width: 100%;
 	background:#242C3E;
 	font-family: 'Nunito', sans-serif !important;
 	font-size: 15px !important;
@@ -13,7 +8,9 @@ body{
 	padding-right: 0px !important;
 }
 
+
 /* Style the MENU */
+
 .nav {
 	background-color: #1B2232;
     transition: 0.3s;
@@ -22,7 +19,20 @@ body{
     outline: none;
 	cursor: pointer;
 	height:75px;
-  	width:101%;
+}
+
+.nav-tabs::-webkit-scrollbar {
+    height: 4px !important;
+}
+ 
+.nav-tabs::-webkit-scrollbar-track {
+    background-color: #242C3E; 
+    border-radius: 10px;
+}
+ 
+.nav-tabs::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #2294E6; 
 }
 
 .nav a{
@@ -45,9 +55,68 @@ body{
 	background-color: #242C3E !important;	
 	border:0px;
 }
-
+.nav-tabs {
+	overflow-x: auto;
+   	overflow-y: hidden;
+   	display: -webkit-box;  
+   	display: -moz-box;   
+ }
+.nav-tabs>li {
+	 float:none;
+}
 
 .content{
 	margin-top: 15px;
 	margin-left: 15px;
+}
+
+@media only screen and (min-width:300px){
+    .content {
+        width: 300px;
+        margin: 0 auto;
+	}
+	.chartReponsive {
+        float: left;
+		max-width: 100%;
+		
+    }
+}
+ 
+@media only screen and (min-width:600px){
+    .content {
+        width: 580px;
+        margin: 0 auto;
+    }
+    .chartReponsive {
+		min-width: 100%;
+		
+    }
+}
+ 
+@media only screen and (min-width:960px){
+    .content {
+        width: 940px;
+    }
+    .chartReponsive {
+		min-width: 100%;
+		
+    }
+}
+@media only screen and (min-width:1140px){
+    .content {
+        width: 1120px;
+	}
+	.chartReponsive {
+		min-width: 50%;
+		
+    }
+}
+@media only screen and (min-width:1360px){
+    .content {
+        width: 1300px;
+	}
+	.chartReponsive {
+		min-width: 50%;
+		
+    }
 }

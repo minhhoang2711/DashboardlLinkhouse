@@ -65,7 +65,7 @@ class BieuDoHoatDong extends Component {
         var { chartData } = this.state;
         var { displayTitle, displayLegend, legendPositon } = this.props;
         return (
-            <div className="chart">
+            <div className="chart" >
                 <Line
                     data={chartData}
                     width={7}
@@ -91,7 +91,8 @@ class BieuDoHoatDong extends Component {
                             fontSize: 8,
                             fontColor: 'white',
                         },
-                        maintainAspectRatio: true
+                        responsive: true,
+                        maintainAspectRatio: true,
                     }}
                 />
             </div>

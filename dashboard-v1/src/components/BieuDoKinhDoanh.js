@@ -114,7 +114,8 @@ class BieuDoKinhDoanh extends Component {
                             fontSize:8,
                             fontColor:'white',
 						},
-						maintainAspectRatio: true
+						responsive: true,
+                        maintainAspectRatio: true,
 					}}
 				/>
 			</div>

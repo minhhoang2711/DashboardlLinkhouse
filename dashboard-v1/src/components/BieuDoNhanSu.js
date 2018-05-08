@@ -90,7 +90,7 @@ class BieuDoNhanSu extends Component {
 			<div className="chart">
 				<Bar
                     data={chartData}
-                    width={8}
+                    width={7}
                     height={3}
 					options={{
                         scales: {
@@ -113,7 +113,8 @@ class BieuDoNhanSu extends Component {
                             fontSize:8,
                             fontColor:'white',
 						},
-						maintainAspectRatio: true
+						responsive: true,
+                        maintainAspectRatio: true,
 					}}
 				/>
 			</div>
