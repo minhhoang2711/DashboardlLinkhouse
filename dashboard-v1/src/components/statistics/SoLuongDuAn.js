@@ -38,7 +38,7 @@ Chart.pluginService.register({
             ctx.fillStyle = color;
 
             //Draw text in center
-            ctx.fillText(txt, centerX, centerY);
+            ctx.fillText(txt , centerX, centerY);
         }
     }
 });
