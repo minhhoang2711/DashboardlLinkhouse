@@ -44,10 +44,10 @@ class App extends Component {
 
                         <div id="linkhouse" className="tab-pane fade in active">
                             <div className="row">
-                                <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 ChartReponsive">
+                                <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 ChartReponsive">
+                                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
                                         <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
-                                            <DoanhThu />
+                                            <DoanhThu className="ChartPie"/>
                                         </div>
                                         <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                                             <SoLuongGiaoDich />
