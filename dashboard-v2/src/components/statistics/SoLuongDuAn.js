@@ -116,7 +116,7 @@ class SoLuongDuAn extends Component {
                                 text: '45 Dự án',
                                 color: 'white', //Default black
                                 fontFamily: 'My-Custom-Font, sans-serif', //Default Arial
-                                //sidePadding: 12 //Default 20 (as a percentage)
+                                sidePadding: 40 //Default 20 (as a percentage)
                             }
                         },
                         title: {

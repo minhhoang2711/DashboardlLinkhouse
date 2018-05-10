@@ -10,7 +10,8 @@
 }
 body{
 	position: absolute;
-	width: 100% !important;
+	width: 1920px !important;
+	height: 1080px;
 	background:#242C3E;
 	font-family: 'My-Custom-Font', sans-serif !important;
 	font-size: 15px !important;
