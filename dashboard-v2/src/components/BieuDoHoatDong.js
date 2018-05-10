@@ -68,7 +68,7 @@ class BieuDoHoatDong extends Component {
             <div className="chart">
                 <Line
                     data={chartData}
-                    width={10}
+                    width={9}
                     height={4}
                     options={{
                         scales: {

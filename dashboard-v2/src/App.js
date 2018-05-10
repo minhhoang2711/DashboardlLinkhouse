@@ -609,17 +609,14 @@ class App extends Component {
                                     </div>
                                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 marginTop">
                                         <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                            <div className="glyphicon glyphicon-stop SquareXanhla"></div>
-                                            <div>Tăng so với tháng trước</div>
-                                        </div>
+                                            <span className="glyphicon glyphicon-stop SquareXanhla"></span>Tăng so với tháng trước
+                                    </div>
                                         <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                            <div className="glyphicon glyphicon-stop SquareHong"></div>
-                                            <div>Giảm so với tháng trước</div>
-                                        </div>
-                                        <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center">
-                                            <div className="glyphicon glyphicon-stop SquareXam"></div>
-                                            <div className="lineHeight">Bằng so với tháng trước</div>
-                                        </div>
+                                            <span className="glyphicon glyphicon-stop SquareHong"></span>Giảm so với tháng trước
+                                    </div>
+                                        <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <span className="glyphicon glyphicon-stop SquareXam"></span>Bằng so với tháng trước
+                                    </div>
                                     </div>
                                 </div>
                                 <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 ChartReponsive">
