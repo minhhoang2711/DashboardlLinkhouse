@@ -38,39 +38,43 @@ Chart.pluginService.register({
             ctx.fillStyle = color;
 
             //Draw text in center
-            ctx.fillText(txt, centerX, centerY);
+            ctx.fillText(txt , centerX, centerY);
         }
     }
 });
 
-class DoanhThu extends Component {
+class SoLuongDuAn extends Component {
     constructor(props) {
         super(props);
         this.state = {
             chartData: {
-                labels: ['Đạt', 'Chưa đạt'],
+                labels: ['Gem RiverSide', 'High Intella', '', 'Park RiverSide'],
                 datasets: [
                     {
                         label: 'Doanh thu',
                         data: [
-                            25,
-                            75,
+                            42,
+                            32,
+                            14,
+                            12
 
                         ],
                         borderWidth: '0',
                         backgroundColor: [
-                            '#2294E6',
-                            '#242C3E',
+                            '#AC92EC',
+                            '#A0D468',
+                            '#FC6E51',
+                            '#4FC1E9'
                         ],
 
                         borderColor: [
-                            '#2294E6',
-                            '#242C3E',
-
+                            '#AC92EC',
+                            '#A0D468',
+                            '#FC6E51',
+                            '#4FC1E9'
                         ]
                     },
-                ],
-                //text:'13.5 Tỷ'
+                ]
             }
         }
     }
@@ -94,35 +98,30 @@ class DoanhThu extends Component {
                     width={4}
                     height={5}
                     options={{
+
+
                         scales: {
                             yAxes: [{
                                 ticks: {
                                     // beginAtZero: true
                                     display: false,
-                                    fontColor: 'white'
 
                                 }
                             }]
                         },
+                        Text: 'asds',
+                        cutoutPercentage: 85,
                         elements: {
                             center: {
-                                text: '13.5 Tỷ',
+                                text: '45 Dự án',
                                 color: 'white', //Default black
                                 fontFamily: 'My-Custom-Font, sans-serif', //Default Arial
-<<<<<<< HEAD
-                                sidePadding: 40 ,//Default 20 (as a percentage)
-                                textAlign: 'left',
-                                display: 'inline-block'
-=======
-                                sidePadding: 40//Default 20 (as a percentage)
->>>>>>> 0d130a8c0e5e181989421b6acac35d19c5ef7109
+                                //sidePadding: 12 //Default 20 (as a percentage)
                             }
                         },
-                        cutoutPercentage: 85,
-
                         title: {
                             display: displayTitle,
-                            text: 'Doanh Thu',
+                            text: 'Số lượng dự án',
                             fontSize: 15,
                             position: 'bottom',
                             fontColor: 'white',
@@ -138,15 +137,21 @@ class DoanhThu extends Component {
                     }}
                 />
 
-                <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 target">
-                    <p className="char">5%</p>
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <span className="glyphicon glyphicon-certificate circleTimDam"></span>Gem RiverSide
+                    <span className="member">84</span>&nbsp;42%
                 </div>
-                <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 down">
-                    <p className="charred"><span className="glyphicon glyphicon-triangle-bottom"></span> 5%</p>
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <span className="glyphicon glyphicon-certificate circleXanhLa"></span>High Intella
+                    <span className="member">47</span>&nbsp;48%
+                </div>
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <span className="glyphicon glyphicon-certificate circleXanhDuong"></span>Park RiverSide
+                    <span className="member">47</span>&nbsp;48%
                 </div>
             </div>
         )
     }
 }
 
-export default DoanhThu;
+export default SoLuongDuAn;
