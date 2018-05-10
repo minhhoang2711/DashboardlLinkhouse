@@ -109,9 +109,7 @@ class DoanhThu extends Component {
                                 text: '13.5 Tỷ',
                                 color: 'white', //Default black
                                 fontFamily: 'My-Custom-Font, sans-serif', //Default Arial
-                                sidePadding: 40 ,//Default 20 (as a percentage)
-                                textAlign: 'left',
-                                display: 'inline-block'
+                                //sidePadding: 12 //Default 20 (as a percentage)
                             }
                         },
                         cutoutPercentage: 85,

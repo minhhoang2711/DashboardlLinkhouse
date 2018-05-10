@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Doughnut, Chart } from 'react-chartjs-2';
+import { Doughnut,Chart } from 'react-chartjs-2';
 
 Chart.pluginService.register({
     beforeDraw: function (chart) {
@@ -43,7 +43,7 @@ Chart.pluginService.register({
     }
 });
 
-class DoanhThu extends Component {
+class SoLuongDoiTac extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -69,8 +69,7 @@ class DoanhThu extends Component {
 
                         ]
                     },
-                ],
-                //text:'13.5 Tỷ'
+                ]
             }
         }
     }
@@ -94,31 +93,29 @@ class DoanhThu extends Component {
                     width={4}
                     height={5}
                     options={{
+
+
                         scales: {
                             yAxes: [{
                                 ticks: {
                                     // beginAtZero: true
                                     display: false,
-                                    fontColor: 'white'
 
                                 }
                             }]
                         },
+                        cutoutPercentage: 85,
                         elements: {
                             center: {
                                 text: '13.5 Tỷ',
                                 color: 'white', //Default black
                                 fontFamily: 'My-Custom-Font, sans-serif', //Default Arial
-                                sidePadding: 40 ,//Default 20 (as a percentage)
-                                textAlign: 'left',
-                                display: 'inline-block'
+                                //sidePadding: 12 //Default 20 (as a percentage)
                             }
                         },
-                        cutoutPercentage: 85,
-
                         title: {
                             display: displayTitle,
-                            text: 'Doanh Thu',
+                            text: 'Số Lượng đối tác',
                             fontSize: 15,
                             position: 'bottom',
                             fontColor: 'white',
@@ -145,4 +142,4 @@ class DoanhThu extends Component {
     }
 }
 
-export default DoanhThu;
+export default SoLuongDoiTac;

@@ -43,7 +43,7 @@ Chart.pluginService.register({
     }
 });
 
-class DoanhThu extends Component {
+class GiaoDichThanhCong extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -69,8 +69,7 @@ class DoanhThu extends Component {
 
                         ]
                     },
-                ],
-                //text:'13.5 Tỷ'
+                ]
             }
         }
     }
@@ -94,12 +93,13 @@ class DoanhThu extends Component {
                     width={4}
                     height={5}
                     options={{
+
+
                         scales: {
                             yAxes: [{
                                 ticks: {
                                     // beginAtZero: true
                                     display: false,
-                                    fontColor: 'white'
 
                                 }
                             }]
@@ -109,16 +109,14 @@ class DoanhThu extends Component {
                                 text: '13.5 Tỷ',
                                 color: 'white', //Default black
                                 fontFamily: 'My-Custom-Font, sans-serif', //Default Arial
-                                sidePadding: 40 ,//Default 20 (as a percentage)
-                                textAlign: 'left',
-                                display: 'inline-block'
+                                //sidePadding: 12 //Default 20 (as a percentage)
                             }
                         },
                         cutoutPercentage: 85,
 
                         title: {
                             display: displayTitle,
-                            text: 'Doanh Thu',
+                            text: 'Giao dịch thành công',
                             fontSize: 15,
                             position: 'bottom',
                             fontColor: 'white',
@@ -137,12 +135,12 @@ class DoanhThu extends Component {
                 <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 target">
                     <p className="char">5%</p>
                 </div>
-                <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 down">
-                    <p className="charred"><span className="glyphicon glyphicon-triangle-bottom"></span> 5%</p>
+                <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 noChange">
+                    <p className="charxam"><span className="glyphicon glyphicon-minus"></span> 5%</p>
                 </div>
             </div>
         )
     }
 }
 
-export default DoanhThu;
+export default GiaoDichThanhCong;
