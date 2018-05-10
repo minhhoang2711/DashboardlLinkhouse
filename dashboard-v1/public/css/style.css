@@ -275,3 +275,11 @@ body{
 		height: auto;
 	}
 }
+
+@media all and (min-width: 1920px) {
+	
+	.item{
+		width: 100% !important;
+		height: 420px;
+	}
+}
