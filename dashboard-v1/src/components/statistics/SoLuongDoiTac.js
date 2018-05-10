@@ -110,7 +110,7 @@ class SoLuongDoiTac extends Component {
                                 text: '13.5 Tỷ',
                                 color: 'white', //Default black
                                 fontFamily: 'My-Custom-Font, sans-serif', //Default Arial
-                                //sidePadding: 12 //Default 20 (as a percentage)
+                                sidePadding: 40
                             }
                         },
                         title: {
