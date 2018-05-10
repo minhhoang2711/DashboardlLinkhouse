@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Bar, Line} from 'react-chartjs-2';
+import {Bar} from 'react-chartjs-2';
 
 class BieuDoKinhDoanh extends Component {
 
@@ -24,6 +24,7 @@ class BieuDoKinhDoanh extends Component {
                           2000,
                           1000,
                           1500,
+                          
                       ],
                       backgroundColor:[
                           '#2294E6',
@@ -55,6 +56,7 @@ class BieuDoKinhDoanh extends Component {
                         2000,
                         900,
                         1000,
+                        
                       ],
                       backgroundColor:[
                           '#60C8E8',
@@ -89,15 +91,22 @@ class BieuDoKinhDoanh extends Component {
 			<div className="chart">
 				<Bar
                     data={chartData}
-                    width={8}
-                    height={3}
+                    width={6}
+                    height={2}
 					options={{
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                        },
 						title:{
 							display:displayTitle,
 							text:'BIỂU ĐỒ KINH DOANH',
                             fontSize:15,
                             fontColor:'white',
-                            fontFamily:'Nunito, sans-serif'
+                            fontFamily:'My-Custom-Font, sans-serif'
 						},
 						legend:{
 							display:displayLegend,
